@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Write your comments here -->
+<html lang="en-US">
+    <head>
+        <title>How-To Technology for Seniors</title>
+        <link rel="stylesheet" href="lesson.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="technology tutorials for seniors">
+        <meta name="keywords" content="technology, digital literacy, senior education">
+        <meta name="author" content="Emma Davis">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="header">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <h1 style="text-align: left;">How-To Technology for Seniors</h1>
+                        </th>
+                        <th>
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                            </ul>
+                        </th>
+                        <th>
+                            <ul>
+                                <li><a href="library.html">Lessons</a></li>
+                            </ul>
+                        </th>
+                        <th>
+                            <ul>
+                                <li><a href="resources.html">Resources</a></li>
+                            </ul>
+                        </th>
+                        <th style="column-width: 25px;"></th>
+                    </tr>
+                </thead>
+            </table>            
+        </header>
+        <table style="width: 100%;">
+            <tr style="height: 50px;">
+                <th style="width:1%; background: linear-gradient(to right, #1a2ad0,#ffffff00);"></th>
+                <th style="width:24%;font-family: Arial, Helvetica, sans-serif;font-size: 32pt;">Introduction to AI</th>
+                <th style="width:75%; background: linear-gradient(to right,#ffffff, #1a2ad0,#1a2ad0,#1a2ad0,#1a2ad0,#1a2ad0);text-align: right;font-family: Arial, Helvetica, sans-serif;color: white;font-size:16pt;"><span style="margin-right: 100px;">Need help? Ask Chatty Cathy →</span></th>
+            </tr>
+        </table>
+        <img src="images/updated chat icon.jpg" style="height: 75px;width: 75px;float: right;position: absolute;top: 20%;right: 1%;border-radius: 50px; border: solid 2px #1a29d0;">
+        <button id="myBtn" onclick="toggleText()" style="height: 100px;width: 100px;position: absolute;top: 19%;left: 92.2%; border-radius: 50px;border:none;background-color: rgba(240, 248, 255, 0);"></button>
+        
+        <div class="content">
+            <div class="ai_lesson">
+                <div style="margin-top: -10px;">
+                    <p>Artificial Intelligence, often called AI, is technology that helps computers do tasks that usually require human thinking. AI is when a computer is programmed to recognize patterns, make suggestions, answer questions, and learn from information. You may already be using AI without realizing it. In this lesson, you will learn what AI is and how it shows up in everyday life.</p>
+                    <p><b>Video: Google Search vs. AI Chat Bot</b><br>The video on the right explains the key differences between searching the internet with an AI chat bot and traditional web searches. Learn how AI chat bots offer personalized, conversational search experiences compared to using key words in search engines, like Bing or Google.<br><br><b>Heads up!</b> Clicking the video will open YouTube in different tab.</p>
+                    <p><b>Where Might I See AI?</b><br>Companies have been increasing the amount of AI tools available in their products over the last couple of years. You may encounter AI when your phone suggests the next word while typing, a website recommends movies or products, you use voice assistants like Siri or Alexa, or email filters remove spam messages.</p>
+                </div>
+                <div>
+                    <button onclick="window.open('https://youtu.be/oq3TndNc0UU?si=8S30ZbteJ4hFEE0t')" style="background-image: url(https://i.ytimg.com/vi/oq3TndNc0UU/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDlK1fzgvxQa7nPFlJ1iA2nybYtfA); background-repeat: no-repeat; width: 720px; height: 400px;border-radius: 20px;"></button>
+                    <div style="background-color: #1a2ad0;border-radius: 20px; padding: 10px;margin-top: 25px;">
+                        <table>
+                            <tr>
+                                <th style="color: #ffffff; font-size: 20pt;font-family: Arial, Helvetica, sans-serif;padding-bottom: 15px;">★ Important Tip ★</th>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #ffffff; font-size: 16pt;border-radius: 10px; padding: 10px 10px;font-weight: 400;font-family: Arial, Helvetica, sans-serif;text-align: left;">
+                                    AI <b>does not</b> think or feel like a person would. It follows instructions created by people. AI is a tool. It should help you, not replace your judgment or make important decisions for you.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h3>Lesson Practice: What can AI do?</h3>
+            <div class="scam_practice" style="text-align: center;font-family: Arial, Helvetica, sans-serif;font-size: 18pt;">
+                <table style="width: 97%;">
+                    <tr style="text-align: center;height: 50px;">
+                        <th colspan="2">Click the buttons to reveal each sentence.</th>
+                    </tr>
+                    <tr style="text-align: center;height: 50px;">
+                        <td id="ai1" style="width: 50%;">AI can... <button onclick="changeAI1Text()" style="width: 150px;">Click to reveal!</button></td>
+                    </tr>
+                    <tr style="text-align: center;height: 50px;">
+                        <td id="ai3" style="width: 50%;">AI cannot... <button onclick="changeAI3Text()" style="width: 150px;">Click to reveal!</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script>
+            var elem = document.getElementById("")
+            function changeAI1Text() {
+                elem = document.getElementById("ai1");
+                elem.innerHTML = "AI can <b>answer basic questions</b> and <button onclick='changeAI2Text()' style='width: 150px;'>Click to reveal!</button></td>";
+            }
+            function changeAI2Text() {
+                elem = document.getElementById("ai1");
+                elem.innerHTML = "AI can <b>answer basic questions</b> and <b>make daily tasks easier</b>.";
+            }
+            function changeAI3Text() {
+                elem = document.getElementById("ai3");
+                elem.innerHTML = "AI cannot <b>make decisions without responding to human input</b> or <button onclick='changeAI4Text()' style='width: 150px;'>Click to reveal!</button>";
+            }
+            function changeAI4Text() {
+                elem = document.getElementById("ai3");
+                elem.innerHTML = "AI cannot <b>make decisions without human input</b> or <b>understand emotions the way people do</b>.";
+            }
+        </script>
+    </body>
+</html>

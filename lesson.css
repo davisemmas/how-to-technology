@@ -1,0 +1,164 @@
+html {
+    scroll-behavior: smooth;
+}
+header {
+    background-color: white;
+    padding: 0px;
+}
+body {
+    padding: 0px 0px 25px 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom,#ffffff,#ffffff,#1a2ad0);
+    background-repeat: no-repeat;
+}
+div.ai_lesson, div.scam_lesson, div.edocs_lesson {
+    display: flex;
+    flex-direction: row;
+}
+div.ai_lesson > div, div.scam_lesson > div, div.edocs_lesson > div {
+    margin: 15px;
+}
+div.content {
+    background-color: #ffffff;
+    border-radius: 0px 0px 40px 40px;
+    width: inherit;
+    overflow-x: hidden;
+    padding: 10px;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a2ad0;
+    font-weight: bolder;
+    font-size: 42pt;
+    margin-left: 25px;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 28pt;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+table {
+    margin: 0px;
+    width: 100%;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+}
+ul {
+    list-style-type: none;
+    align-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+ul li {
+    vertical-align: middle;
+    margin-top: 5px;
+}
+ul li a {
+    display:inline-block;
+    background-color: #1a2ad0;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 15px 0px;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 125px;
+}
+ul li a:hover {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #1a2ad0;
+    font-weight: bold;
+    border: 2px solid #1a2ad0;
+    vertical-align: middle;
+    width: 122px;
+}
+.scam_lesson ul, ol {
+    margin-top: -20px;
+}
+.scam_lesson ul li {
+    float: none;
+    list-style-type: disc;
+    margin-left: 0px;
+    margin-right: -200px;
+    text-align: left;
+    font-size: 18pt;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.scam_lesson ol li {
+    float: none;
+    margin-left: 0px;
+    margin-right: -200px;
+    text-align: left;
+    font-size: 18pt;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.edocs_lesson ul, ol {
+    margin-top: -20px;
+}
+.edocs_lesson ul li {
+    float: none;
+    list-style-type: disc;
+    margin-left: 0px;
+    margin-right: -200px;
+    text-align: left;
+    font-size: 18pt;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.edocs_lesson ol li {
+    float: none;
+    margin-left: 0px;
+    text-align: left;
+    font-size: 18pt;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.scam_practice button {
+    font-size: 16pt;
+    width: 100px;
+    margin: auto;
+    padding: 5px 0px;
+    border-radius: 10px;
+}
+.scam_practice button:hover {
+    background-color: #1a2ad0;
+    color: white;
+}
+.scam_practice table {
+    margin: 25px;
+    background-color: #1a2ad0;
+    border-radius: 20px;
+    border-spacing: 15px;
+}
+.scam_practice th {
+    color: white;
+    height: 50px;
+}
+.scam_practice tr {
+    height: 155px;
+    background-color: #1a2ad0;
+    border-radius: 20px;
+}
+.scam_practice td {
+    background-color: white;
+    border-radius: 20px;
+    padding: 0px 10px;
+}
+.icons button:hover, .files button:hover {
+    border: 5px solid #1a2ad0;
+    background-color: gainsboro;
+    color: black;
+}
+.icons button:focus, .files button:focus {
+    border: 5px solid #1a2ad0;
+    background-color: white;
+}
