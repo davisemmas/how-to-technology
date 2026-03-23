@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+header {
+    background-color: white;
+    padding: 0px;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+.home {
+    background: linear-gradient(to bottom,#1a2ad0,#ffffff);
+    background-repeat: no-repeat;
+    padding: 25px;
+    width: inherit;
+    overflow-x: hidden;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a2ad0;
+    font-weight: bolder;
+    font-size: 42pt;
+    margin-left: 25px;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 28pt;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+table {
+    margin: 0px;
+    width: 100%;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style-type: none;
+    align-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+ul li {
+    vertical-align: middle;
+    margin-top: 5px;
+}
+ul li a {
+    display:inline-block;
+    background-color: #1a2ad0;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 15px 0px;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 125px;
+}
+ul li a:hover {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #1a2ad0;
+    font-weight: bold;
+    border: 2px solid #1a2ad0;
+    vertical-align: middle;
+    width: 122px;
+}
+.ai button {
+    background-image:url("../updated\ chat\ icon.jpg");
+    height: 100px;
+    width: 100px;
+    float: right;
+}
+.home button {
+    position: absolute;
+    top: 55%;
+    left: 33%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    }
+.tooltiptext {
+    visibility: hidden;
+    background-color: aliceblue;
+    color: black;
+    text-align: left;
+    font-weight: 300;
+    border-radius: 20px;
+    padding: 10px;
+    width: 500px;
+    position: absolute;
+    top: 125%;
+    right: 10%;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.modal {
+    display: none;
+    position: fixed;
+    border: black solid 2px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    right: 10px;
+    top: 55px;
+    width: 30%;
+    vertical-align: top;
+    overflow: auto;
+    background-color: white;
+}
+.modal-body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18pt;
+}
+.modal p {
+    margin: 15px 0px;
+}
+.modal button {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 10px 15px;
+    border: black solid 1px;
+    font-size: 18pt;
+    margin-bottom: 15px;
+}
+.modal button:hover {
+    border: solid 3px #1a2ad0;
+}
+/* .botBtn {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 10px 15px;
+    border: black solid 1px;
+}
+.botBtn:hover {
+    border: solid 3px #1a2ad0;
+    cursor: pointer;
+} */
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: pre-wrap;
+    word-wrap: normal;
+    font-size: 20pt;
+}
+.scroll-container {
+    height: 5em; /* Define a fixed height for the visible area */
+    overflow: hidden; /* Hide the text that is outside the container */
+}
+
+.scroll-container span {
+    display: block;
+    transform: translateY(100%); /* Start position: below the container */
+    animation: scroll 10s ease-out forwards; /* Apply the animation */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(100%); /* Starting point (below view) */
+    }
+    30% {
+        transform: translateY(0); /* Ending point (top of container) */
+    }
+    70% {
+        transform: translateY(0); /* Ending point (top of container) */
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}

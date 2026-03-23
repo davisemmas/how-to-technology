@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Write your comments here -->
+<html lang="en-US">
+    <head>
+        <title>How-To Technology for Seniors</title>
+        <link rel="stylesheet" href="home_styles.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="technology tutorials for seniors">
+        <meta name="keywords" content="technology, digital literacy, senior education">
+        <meta name="author" content="Emma Davis">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <h1 style="text-align: left;">How-To Technology for Seniors</h1>
+                        </th>
+                        <th>
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                            </ul>
+                        </th>
+                        <th>
+                            <ul>
+                                <li><a href="library.html">Lessons</a></li>
+                            </ul>
+                        </th>
+                        <th>
+                            
+                            <ul>
+                                <li><a href="resources.html">Resources</a></li>
+                            </ul>
+                            
+                        </th>
+                        <th style="column-width: 25px;"></th>
+                    </tr>
+                </thead>
+            </table>            
+        </header>
+<!--         <marquee behavior="scroll" direction="up" scrollamount="1">This is a test</marquee>
+
+        <div class="scroll-container">
+            <span>It's never too late to improve.</span>
+            <span>It's never too late to grow.</span>
+        </div> -->
+        <div class="home">
+            
+            <div style="text-align: center;width: inherit;">
+                <h4 style="font-family: Arial, Helvetica, sans-serif;color: white;font-size: 38pt;margin-top: 40px;margin-bottom: 110px;">It's never too late to improve.</h4>
+                <div style="margin: auto;">
+                    <img src="images/home_lady.jpeg" style="max-width: 700px;max-height:700px;border-radius: 20px; position: relative;top: 20%;transform: rotate(-15deg); float: left;margin-left: -100px;">
+                    <img src="images/home_guy.jpeg" style="max-width: 700px;max-height:700px;border-radius: 20px; position: relative;top: 90%;transform: rotate(15deg); float: right;margin-right: -100px;margin-top: 50px;">
+                    <button type="button"><a href="library.html" style="color: white; text-decoration: none;">Start your learning journey today!</a></button>
+                </div>
+            </div>
+            <div id="about" style="text-align: left; margin-top: 550px;">
+                <h3 style="margin-top: 700px;">About <i style="color: #1a2ad0;">How-To Technology for Seniors</i></h3>
+                <pre style="margin-left: 25px;margin-right: 25px;">This project started as a an idea to help those in need. <mark class="tooltip" style="background-color: #1a29d0; color: white; font-weight: bold; padding: 5px 10px; border-radius: 20px;">Digital literacy<span class="tooltiptext">"Digital Literacy" refers to the the ability to access, manage, understand, integrate, communicate, evaluate and create information safely and appropriately through digital technologies.</span></mark> is a skill that now more than ever is key for online engagement. Advancements in technology are happening at a breakneck pace, leaving little room for guided learning outside of classrooms.</pre>
+            </div>
+        </div>
+        
+        <div id="myModal" class="modal">
+            <div class="modal-body">
+                <p style="background-color: #1a29d0; color: white; border-radius: 15px; padding: 10px 15px;">Hello! Welcome to How-To Technology for Seniors. I'm Chatty Cathy, an AI chatbot that can guide learning, provide resources, and answer any questions you have about this website.</p>
+                <p style="background-color: #1a29d0; color: white; border-radius: 15px; padding: 10px 15px;">What do you need help with today?</p>
+                <button onclick="window.location.href='resources.html'">I want to explore more resources.</button>
+                <button onclick="window.location.href='library.html'">I need guidance on a lesson.</button>
+                <button>I need help with something else.</button>
+            </div>
+        </div>
+        <img src="images/updated chat icon.jpg" style="height: 100px;width: 100px;float: right;position: fixed;top: 50%;right: 1%;border-radius: 50px; border: solid 2px #1a29d0;">
+        <button id="myBtn" onclick="toggleText()" style="height: 100px;width: 100px;position: absolute;top: 50%;left: 92.2%; border-radius: 50px;border:none;background-color: rgba(240, 248, 255, 0);"></button>
+        <footer></footer>
+        <script>
+            var modal = document.getElementById("myModal");
+            var mOpen = false;
+            function toggleText() {
+                if (mOpen === false) {
+                    modal.style.display = "block";
+                    mOpen = true;
+                } else {
+                    modal.style.display = "none";
+                    mOpen = false;
+                }
+            }
+        </script>
+    </body>
+</html>
